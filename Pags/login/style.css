@@ -96,6 +96,10 @@
       box-shadow: inset 0.5px 0.5px 10px rgba(0, 0, 0, 0.545);
     }
   button span {margin: 0px; font-size: 0.35em;}
+  
+  hr {padding: 4px; background-color: rgb(41, 41, 41); border-style: none;} 
+
+  img {position: relative; z-index: 1;}
 
 /*-------------------*/
 
@@ -121,14 +125,25 @@
     margin-right: 300;
 }
 
+.container_tv {position: relative;}
+
+.img_etc {width: 500px;}
+
 /*-------------------*/
 
 /* ! IDs */
-#video_tv {
+#video_tv1 {
     position: absolute;
-    right: 76px;
-    bottom: -351px;
-    z-index: -1;
+    width: 400px;
+    top: 78px;
+    left: 62px;
+}
+
+#video_tv2 {
+    position: absolute;
+    width: 310px;
+    top: 42px;
+    left: 90px;
 }
 
 /*-------------------*/
