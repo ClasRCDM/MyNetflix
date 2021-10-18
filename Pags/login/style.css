@@ -21,11 +21,6 @@
     src: local(Netflix), url('../fonts/NetflixSansThin.ttf') format('truetype');
     font-weight: 400;
 }
-@font-face {
-    font-family: 'Netflix Sans';
-    src: local(Netflix), url('../fonts/NetflixSansIcon.ttf') format('truetype');
-    font-weight: 250;
-}
 
 :root {
     --font: 1em 'Netflix Sans', sans-serif, Arial;
@@ -67,6 +62,13 @@
        grid-template-columns: 400px 190px;
        margin-top: 30px; margin-bottom: 10px;
    }
+
+   section {
+       padding: 4rem 0; padding-left: 70px; padding-right: 75px;
+       display: flex; align-items: center; align-content: center;
+   }
+
+   .container h1 {font-weight: 600;}
 
   /* TODO Inline-level */
   header img, header a {margin: 0px;}
@@ -113,8 +115,20 @@
 .p_1 {font-size: 26px;}
 .p_2 {font-size: 19px;}
 
+.container {
+    max-width: 1130px;
+    font-size: 1.8em;
+    margin-right: 300;
+}
+
 /*-------------------*/
 
 /* ! IDs */
+#video_tv {
+    position: absolute;
+    right: 76px;
+    bottom: -351px;
+    z-index: -1;
+}
 
 /*-------------------*/
