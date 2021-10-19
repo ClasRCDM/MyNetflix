@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* ! Regras Gerais */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {}
+
+/*-------------------*/
+
+/* * Static         */
+   /* TODO Box-level */
+   body {background-color: black;}
+
+  /* TODO Inline-level */
+
+/*-------------------*/
+
+/* * Animat         */
+   /* TODO Box-level */
+  /* TODO Inline-level */
+
+/*-------------------*/
+
+/* * Events         */
+  
+   /* TODO Class */
+
+/*-------------------*/
+
+/* ! Class */
+
+/*-------------------*/
+
+/* ! IDs */
+
+/*-------------------*/
