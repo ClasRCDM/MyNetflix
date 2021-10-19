@@ -76,22 +76,30 @@
 
    ul {columns: 4; padding-top: 10px; padding-bottom: 0px;}
 
+   svg {
+       position: absolute;
+       left: 69em;
+       top: 0;
+       fill: none;
+       stroke: rgb(43, 42, 42);
+       stroke-dasharray: 150 480;
+       stroke-dashoffset: 150;
+       transition: 1s ease-in-out;
+   }
+
   /* TODO Inline-level */
   header img, header a {margin: 0px;}
 
   header a {
-      display: inline-block;
       background-color: var(--backcol); color: #fff;
       padding: 7px 12px; margin-bottom: 10px;
-      text-decoration: none;
-      border-radius: 5px;
-      box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.545);
   }
 
   input[type=text], button {margin: 0px;}
-
+  
   input[type=text] {
       padding: 20px 10px;
+      border-radius: 15px 0px 0px 15px;
   }
 
   button {
@@ -100,6 +108,7 @@
       background-color: var(--backcol); color: white;
       font-size: 1.55em;
       box-shadow: inset 0.5px 0.5px 10px rgba(0, 0, 0, 0.545);
+      border-radius: 0px 10px 10px 0px;
   }
   button span {margin: 0px; font-size: 0.35em;}
   
@@ -119,12 +128,25 @@
       font-size: 0.8em; font-weight: 600;
   }
 
+  .btn span {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
 /*-------------------*/
 
 /* * Animat         */
    /* TODO Box-level */
-  /* TODO Inline-level */
-  ul a:hover {text-decoration: underline;}
+   .btn:hover {
+     transition: 1s ease-in-out;
+     background: #da4f4f;
+   }
+   
+   .btn:hover svg {
+     stroke-dashoffset: -480;
+   }
+   /* TODO Inline-level */
+   ul a:hover {text-decoration: underline;}
 
 /*-------------------*/
 
@@ -147,6 +169,13 @@
 .container_tv {position: relative;}
 
 .img_etc {width: 500px;}
+
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ffab91;
+    padding-right: 18px; padding-left: 21px;
+}
 
 /*-------------------*/
 
