@@ -22,8 +22,17 @@
    src: local(Netflix), url('../fonts/NetflixSansThin.ttf') format('truetype');
    font-weight: 400;
 }
+@font-face {
+   font-family: 'Netflix Sans';
+   src: local(Netflix), url('../fonts/NetflixSansIcon.ttf') format('truetype');
+   font-weight: 300;
+}
 
-:root {}
+:root {
+   --font: 1em 'Netflix Sans', sans-serif, Arial;
+
+   --backcol: #f40612;
+}
 
 /*-------------------*/
 
@@ -34,17 +43,33 @@
    header {
       background-color: #141414;
       padding: 16px 0;
+      font: var(--font);
    }
 
    header nav {padding: 10px;}
 
 
   /* TODO Inline-level */
+  br {padding-inline-end: 42em;}
+
   header img {max-width: 100px;}
 
   header a {color: white; text-decoration: none;}
 
-  header li {margin-left: 15px;}
+  header li {margin-left: 15px; font-weight: 300;}
+
+  header i {
+     color: white;
+     font-size: 18px; font-weight: bold;
+     cursor: pointer;
+     padding-inline: 15px;
+  }
+
+  .circle_notification span {
+     font-size: 10px;
+     color: white;
+     vertical-align: 20px;
+  }
 
     /* TODO Inline-level */
 
@@ -66,14 +91,27 @@
 
 /* ! Class */
 .center{
-   display: flex; flex-wrap: wrap;
-   align-content: space-between; align-items: center;
-   max-width: 1280px;
+   display: flex; flex-wrap: wrap; align-items: center;
+   max-width: 1480px;
    margin: 0;
    padding: 0 2%;
 }
 
 .clear{clear: both;}
+
+.icon-search {font-size: 20px;}
+.icon-bell-alt {font-size: 25px;}
+
+.notification {position: relative;}
+
+.circle_notification {
+   position: absolute;
+   left: 25px; top: 0;
+   width: 14px; height: 14px;
+   border-radius: 10px;
+   background-color: var(--backcol);
+   text-align: center;
+}
 
 /*-------------------*/
 
