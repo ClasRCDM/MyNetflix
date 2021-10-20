@@ -5,6 +5,8 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   color: white;
+   text-decoration: none; list-style: none; border-style: none;
 }
 
 /* Fontes */
@@ -48,18 +50,25 @@
 
    header nav {padding: 10px;}
 
+   .container_outdoor img, .container_outdoor p {
+      max-width: 480px;
+   }
+
+   .container_outdoor p {
+      text-align: justify;
+      font-size: 1.2em; font-weight: 500; 
+      letter-spacing: 2px;
+      padding-top: 10px; padding-bottom: 15px;
+   }
 
   /* TODO Inline-level */
-  br {padding-inline-end: 42em;}
+  br {padding-inline-end: 40em;}
 
   header img {max-width: 100px;}
-
-  header a {color: white; text-decoration: none;}
 
   header li {margin-left: 15px; font-weight: 300;}
 
   header i {
-     color: white;
      font-size: 18px; font-weight: bold;
      cursor: pointer;
      padding-inline: 15px;
@@ -67,9 +76,10 @@
 
   .circle_notification span {
      font-size: 10px;
-     color: white;
      vertical-align: 20px;
   }
+
+  button {color: black; margin-right: 15px;}
 
     /* TODO Inline-level */
 
@@ -80,6 +90,7 @@
 /* * Animat         */
    /* TODO Box-level */
   /* TODO Inline-level */
+  #butao:hover {background-color: rgba(77, 77, 77, 0.508);}
 
 /*-------------------*/
 
@@ -113,8 +124,25 @@
    text-align: center;
 }
 
+.container_outdoor {
+   background-image: linear-gradient(0deg, transparent, 70%, #000000), url('imgs/magi.jpg');
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 600px;
+   padding: 60px 70px;
+   font: var(--font);
+}
+
+.much_information {background-color: #646464; color: white;}
+
 /*-------------------*/
 
 /* ! IDs */
+#butao {
+   font-size: 1.4em;
+   padding: 8px 25px;
+   border-radius: 4px;
+}
 
 /*-------------------*/
