@@ -7,6 +7,22 @@
    box-sizing: border-box;
 }
 
+/* Fontes */
+@font-face {
+   font-family: 'Netflix Sans';
+   src: local(Netflix), url('../fonts/NetflixSansRegular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Netflix Sans';
+   src: local(Netflix), url('../fonts/NetflixSansMedium.ttf') format('truetype');
+   font-weight: 600;
+}
+@font-face {
+   font-family: 'Netflix Sans';
+   src: local(Netflix), url('../fonts/NetflixSansThin.ttf') format('truetype');
+   font-weight: 400;
+}
+
 :root {}
 
 /*-------------------*/
@@ -15,7 +31,24 @@
    /* TODO Box-level */
    body {background-color: grey;}
 
+   header {
+      background-color: #141414;
+      padding: 16px 0;
+   }
+
+   header nav {padding: 10px;}
+
+
   /* TODO Inline-level */
+  header img {max-width: 100px;}
+
+  header a {color: white; text-decoration: none;}
+
+  header li {margin-left: 15px;}
+
+    /* TODO Inline-level */
+
+    header nav, header li {display: inline-block;} 
 
 /*-------------------*/
 
@@ -33,8 +66,10 @@
 
 /* ! Class */
 .center{
+   display: flex; flex-wrap: wrap;
+   align-content: space-between; align-items: center;
    max-width: 1280px;
-   margin: 0 auto;
+   margin: 0;
    padding: 0 2%;
 }
 
