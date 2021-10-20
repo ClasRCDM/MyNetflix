@@ -13,7 +13,7 @@
 
 /* * Static         */
    /* TODO Box-level */
-   body {background-color: black;}
+   body {background-color: grey;}
 
   /* TODO Inline-level */
 
@@ -32,6 +32,13 @@
 /*-------------------*/
 
 /* ! Class */
+.center{
+   max-width: 1280px;
+   margin: 0 auto;
+   padding: 0 2%;
+}
+
+.clear{clear: both;}
 
 /*-------------------*/
 
