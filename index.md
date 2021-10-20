@@ -6,6 +6,7 @@ A Netflix version of my parameters, with animations, and other new stuff
 
 - [`login Netflix`](https://clasrcdm.github.io/MyNetflix/Pags/login/netflixlogin.html)
 - [`Netflix`]()
+<hr>
 - ### Built with
 
   ```html
