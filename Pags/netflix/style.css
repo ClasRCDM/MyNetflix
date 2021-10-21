@@ -40,7 +40,7 @@
 
 /* * Static         */
    /* TODO Box-level */
-   body {background-color: grey;}
+   body {background-color: black;}
 
    header {
       background-color: #141414;
@@ -60,6 +60,8 @@
       letter-spacing: 2px;
       padding-top: 10px; padding-bottom: 15px;
    }
+
+   nav {scrollbar-width: none}
 
   /* TODO Inline-level */
   br {padding-inline-end: 40em;}
@@ -81,7 +83,9 @@
 
   button {color: black; margin-right: 15px;}
 
-    /* TODO Inline-level */
+  .row_posters img {padding: 5px;}
+
+    /* TODO Inline-level\Box-level */
 
     header nav, header li {display: inline-block;} 
 
@@ -92,10 +96,12 @@
   /* TODO Inline-level */
   #butao:hover {background-color: rgba(77, 77, 77, 0.508);}
 
+  .row_posters img:hover {transform: scale(1.1);}
+
 /*-------------------*/
 
 /* * Events         */
-  
+
    /* TODO Class */
 
 /*-------------------*/
@@ -125,7 +131,7 @@
 }
 
 .container_outdoor {
-   background-image: linear-gradient(0deg, transparent, 70%, #000000), url('imgs/magi.jpg');
+   background-image: linear-gradient(0deg, transparent, 80%, #000000), linear-gradient(180deg, transparent, 70%, #000000), url('imgs/magi.jpg');
    background-size: cover;
    background-position: center;
    width: 100%;
@@ -135,6 +141,17 @@
 }
 
 .much_information {background-color: #646464; color: white;}
+
+.row_posters {
+   margin-right: 10px;
+   transition: trasform 450ms;
+}
+
+.row_posters {
+   display: flex;
+   overflow-y: hidden;
+   padding: 20px;
+}
 
 /*-------------------*/
 
