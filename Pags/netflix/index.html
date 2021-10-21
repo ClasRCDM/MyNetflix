@@ -59,7 +59,7 @@
     </section>
 
     <section class="row"> <!-- Navegation itens -->
-        <h2>Continuar assistindo como {name}</h2>
+        <h2>Continuar assistindo como ClasRCDM</h2>
         <nav class="row_posters">
             <img src="https://occ-0-642-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdoLtB6JsbDbJmdUGJwoK8WN7K8GMZonJGN7xKdrGHNCBUoUjJHpddfuAEOKOkZ6vsk8538eAiLr5h1ToiTGNdfxDq2m7hkdJuPoglGzs_r8JM0DS1RjG4k7b-kz4EbgkiIlMiWX0jySE9Hodid_FlchSzK8kv5Kzt9ett6ay2Ci5z86iniP22w.jpg?r=1bc" alt="My Name">
             <img src="https://occ-0-642-559.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABceABEuYoMqZxWy9OtDmKSudB1znmwWyPd4KfERpVciTmC66vaXoK-cIBGqI-62VBA6I3ui2qkWCoqhreH2t2c-2_PU-00o9gzosBbm5newlUyLje9O4jYQuag6yG9No_qogyXxn8zvw9w490gQRkFB1F_9luw.jpg?r=4ee" alt="Gokushufudou Tatsu Imortal">
@@ -72,5 +72,15 @@
         </nav>
     </section>
 
+    <script>
+        const nav = document.querySelector('header')
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add('header_bckcolor')
+            } else {
+                nav.classList.remove('header_bckcolor')
+            }
+        }) 
+    </script>
 </body>
 </html>

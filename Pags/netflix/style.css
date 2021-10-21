@@ -43,9 +43,11 @@
    body {background-color: black;}
 
    header {
-      background-color: #141414;
+      position: fixed;
       padding: 16px 0;
       font: var(--font);
+      transition-timing-function: ease-in;
+      transition: all .5s;
    }
 
    header nav {padding: 10px;}
@@ -62,6 +64,8 @@
    }
 
    nav {scrollbar-width: none}
+
+   .row h2 {padding-left: 25px;}
 
   /* TODO Inline-level */
   br {padding-inline-end: 40em;}
@@ -83,7 +87,7 @@
 
   button {color: black; margin-right: 15px;}
 
-  .row_posters img {padding: 5px;}
+  .row_posters img {padding: 5px; border-radius: 10px; transition: transform 450ms;}
 
     /* TODO Inline-level\Box-level */
 
@@ -109,12 +113,14 @@
 /* ! Class */
 .center{
    display: flex; flex-wrap: wrap; align-items: center;
-   max-width: 1480px;
+   max-width: 1680px; width: 1400px;
    margin: 0;
-   padding: 0 2%;
+   padding: 0; padding-left: 3em; padding-right: 30px;
 }
 
 .clear{clear: both;}
+
+.header_bckcolor {background-color: #141414;}
 
 .icon-search {font-size: 20px;}
 .icon-bell-alt {font-size: 25px;}
@@ -144,7 +150,6 @@
 
 .row_posters {
    margin-right: 10px;
-   transition: trasform 450ms;
 }
 
 .row_posters {
